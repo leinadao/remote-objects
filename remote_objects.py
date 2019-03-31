@@ -12,7 +12,7 @@ def handle (object, method): ## TODO: Correct methods POST, GET etc?
     '''
         Handle a request.
     '''
-    kwargs = request.json (kwargs)
+    kwargs = request.json ()
     key_given = kwargs.pop (
         'key',
         None,
@@ -36,3 +36,5 @@ def handle (object, method): ## TODO: Correct methods POST, GET etc?
             )
         return abort (404, 'Method not found.')
     return abort (404, 'Object not found.')
+
+run ()
