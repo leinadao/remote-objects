@@ -8,7 +8,7 @@ from bottle import (
 key = 'u9f349uca0jd0jf0594j09sd09420fnrdnfuhf9ojsoedcIOmf'
 
 @route ('/<object>/<method>')
-def handle (object, method, kwargs): ## TODO: Correct methods POST, GET etc?
+def handle (object, method): ## TODO: Correct methods POST, GET etc?
     '''
         Handle a request.
     '''
