@@ -36,4 +36,7 @@ def handle (object, method): ## TODO: Correct methods POST, GET etc?
         return abort (404, 'Method not found.')
     return abort (404, 'Object not found.')
 
-run ()
+run (
+    host = '192.168.1.67',
+    port = 8080,
+)
