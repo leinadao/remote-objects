@@ -30,7 +30,6 @@ def handle (object, method): ## TODO: Correct methods POST, GET etc?
             None,
         )
         if to_call:
-            kwargs = request.json (kwargs)
             return dict (
                 data = to_call (**kwargs),
             )
